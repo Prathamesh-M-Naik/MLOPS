@@ -96,12 +96,34 @@ pot = st.sidebar.number_input("Potential", value=val('potential',0))
 wag = st.sidebar.number_input("Wage", value=val('wage_eur',0))
 rep = st.sidebar.number_input("Reputation", value=val('international_reputation',1))
 
+# ---------- PREDICTION HISTORY ----------
+if "prediction_history" not in st.session_state:
+    st.session_state.prediction_history = []
+
 # ---------- PREDICT ----------
 st.subheader("💰 Prediction Result")
-if st.sidebar.button("Predict"):
-    inp = pd.DataFrame([[age,ovr,pot,wag,rep]], columns=cols)
-    pred = best_model.predict(inp)[0]
-    st.markdown(f"<div class='metric-box'><h2>Estimated Value</h2><h1>€{int(pred):,}</h1></div>",True)
 
-st.markdown("---")
-st.markdown("### 🚀 MSc Data Science | 25P0630009")
+if st.sidebar.button("Predict"):
+    inp = pd.DataFrame([[age, ovr, pot, wag, rep]], columns=cols)
+    pred = best_model.predict(inp)[0]
+
+    player_name = p if p != "Custom" else "Custom Player"
+
+    st.markdown(
+        f"<div class='metric-box'><h2>Estimated Value</h2><h1>€{int(pred):,}</h1></div>",
+        unsafe_allow_html=True
+    )
+
+    st.session_state.prediction_history.append({
+        "Player": player_name,
+        "Age": age,
+        "Overall": ovr,
+        "Potential": pot,
+        "Predicted Value (€)": int(pred)
+    })
+
+# ---------- PREDICTION HISTORY ----------
+if st.session_state.prediction_history:
+    st.subheader("📋 Prediction History")
+    history_df = pd.DataFrame(st.session_state.prediction_history)
+    st.dataframe(history_df, use_container_width=True)

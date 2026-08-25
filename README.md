@@ -1,93 +1,70 @@
-# FIFA Player Market Value Prediction
+⚽ FIFA Player Market Value Prediction
 
-Machine Learning project that predicts FIFA player market values using regression algorithms and an interactive Streamlit dashboard.
+A Machine Learning project that predicts FIFA player market values using regression algorithms and an interactive Streamlit dashboard.
 
+📌 Project Overview
 
-## Project Overview
+Football player market value is influenced by several factors, including a player's overall rating, potential, wage, reputation, and age.
 
-Football player valuation is influenced by several factors such as:
-- Overall rating
-- Potential
-- Wage
-- Reputation
-- Age
+This project applies multiple Machine Learning regression techniques to estimate a player's market value based on selected player attributes. The trained models are evaluated and compared using standard regression metrics, with the results presented through an interactive Streamlit dashboard.
 
-This project uses Machine Learning models to predict a player's estimated market value based on these features.
+✨ Features
+Multiple Machine Learning regression models
+Hyperparameter tuning using GridSearchCV
+Interactive Streamlit dashboard
+Real-time player market value prediction
+Model performance comparison
+Data visualization and performance charts
+Evaluation using MAE, RMSE, and R² Score
+🤖 Models Used
+Linear Regression
+Decision Tree Regressor
+Random Forest Regressor
+XGBoost Regressor
+K-Nearest Neighbors (KNN)
+📊 Dataset
 
+Dataset: players_21.csv
 
-##  Features
+Features Used
+Age
+Overall Rating
+Potential
+Wage
+International Reputation
+Target Variable
+Player Market Value (€)
+🛠️ Technologies Used
+Python
+Pandas
+NumPy
+Scikit-learn
+XGBoost
+Streamlit
+Matplotlib
+📈 Evaluation Metrics
 
-- Multiple ML regression models
-- Hyperparameter tuning using GridSearchCV
-- Interactive Streamlit dashboard
-- Real-time player value prediction
-- Model performance comparison
-- Data visualization charts
+The regression models are evaluated using:
 
-
-##  Models Used
-
-- Linear Regression
-- Decision Tree Regressor
-- Random Forest Regressor
-- XGBoost Regressor
-- K-Nearest Neighbors (KNN)
-
-
-##  Dataset
-
-Dataset used:
-- FIFA Players Dataset (`players_21.csv`)
-
-Features used:
-- Age
-- Overall Rating
-- Potential
-- Wage
-- International Reputation
-
-Target:
-- Player Market Value (€)
-
-
-## Technologies Used
-
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- XGBoost
-- Streamlit
-- Matplotlib
-
-
-##  Evaluation Metrics
-
-- MAE (Mean Absolute Error)
-- RMSE (Root Mean Squared Error)
-- R² Score
-
-
-##  How to Run
-
-### 1. Clone Repository
-
-```bash
+MAE (Mean Absolute Error) — measures the average prediction error.
+RMSE (Root Mean Squared Error) — gives greater weight to larger prediction errors.
+R² Score — measures how well the model explains the variation in player market values.
+🚀 How to Run
+1. Clone the Repository
 git clone YOUR_GITHUB_LINK
-```
+cd YOUR_PROJECT_FOLDER
 
-### 2. Install Requirements
-
-```bash
+2. Install Dependencies
 pip install -r requirements.txt
-```
 
-### 3. Run Streamlit App
-
-```bash
+3. Run the Streamlit Dashboard
 streamlit run app.py
-```
 
-## 👨‍💻 Author
 
-Prathamesh Naik  
+The application will open in your browser, where you can enter player attributes and generate a predicted market value.
+
+👨‍💻 Author
+
+Prathamesh Naik
+
+⭐ If you found this project useful, feel free to explore the repository and give it a star!

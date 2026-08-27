@@ -63,6 +63,13 @@ streamlit run app.py
 
 The application will open in your browser, where you can enter player attributes and generate a predicted market value.
 
+📁 Project Structure
+
+- `app.py` — Streamlit application
+- `players_21.csv` — FIFA player dataset
+- `requirements.txt` — Project dependencies
+- `README.md` — Project documentation
+
 👨‍💻 Author
 
 Prathamesh Naik

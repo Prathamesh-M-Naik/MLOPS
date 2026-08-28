@@ -79,4 +79,6 @@ The application will open in your browser, where you can enter player attributes
 
 Prathamesh Naik
 
+Goa University
+
 ⭐ If you found this project useful, feel free to explore the repository and give it a star!

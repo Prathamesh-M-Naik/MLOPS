@@ -75,6 +75,10 @@ The application will open in your browser, where you can enter player attributes
 - `requirements.txt` — Project dependencies
 - `README.md` — Project documentation
 
+## Git Workflow
+
+This project demonstrates collaborative development using Git branches, commits, merging, rebasing, and GitHub pull requests.
+
 👨‍💻 Author
 
 Prathamesh Naik

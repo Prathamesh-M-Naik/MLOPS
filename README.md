@@ -49,6 +49,11 @@ The regression models are evaluated using:
 MAE (Mean Absolute Error) — measures the average prediction error.
 RMSE (Root Mean Squared Error) — gives greater weight to larger prediction errors.
 R² Score — measures how well the model explains the variation in player market values.
+
+💡 Key Insight
+
+Player attributes such as overall rating, potential, wage, and age play an important role in predicting market value.
+
 🚀 How to Run
 1. Clone the Repository
 git clone YOUR_GITHUB_LINK
@@ -69,6 +74,10 @@ The application will open in your browser, where you can enter player attributes
 - `players_21.csv` — FIFA player dataset
 - `requirements.txt` — Project dependencies
 - `README.md` — Project documentation
+
+## Git Workflow
+
+This project demonstrates collaborative development using Git branches, commits, merging, rebasing, and GitHub pull requests.
 
 👨‍💻 Author
 

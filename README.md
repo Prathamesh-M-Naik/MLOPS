@@ -79,6 +79,10 @@ The application will open in your browser, where you can enter player attributes
 
 This project demonstrates collaborative development using Git branches, commits, merging, rebasing, and GitHub pull requests.
 
+## Stash Practice
+
+This change is temporarily saved using Git stash.
+
 👨‍💻 Author
 
 Prathamesh Naik
@@ -86,3 +90,7 @@ Prathamesh Naik
 Goa University
 
 ⭐ If you found this project useful, feel free to explore the repository and give it a star!
+
+## Cherry Pick Practice
+
+This change will be cherry-picked to another branch.
